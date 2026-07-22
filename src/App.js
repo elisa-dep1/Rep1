@@ -1,4 +1,4 @@
-import flyer from './flyer.jpg';
+import flyer from './flyer.png';
 import './App.css';
 
 function App() {

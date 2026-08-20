@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+
+}
+
+.logo {
+    width: 165px;
+    margin-left: -17px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+
+}
+
+li:hover {
+    cursor: pointer;
+    color: var(--color-primary);
+
+
+}

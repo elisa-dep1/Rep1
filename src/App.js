@@ -1,14 +1,22 @@
-import flyer from './flyer.png';
 import './App.css';
 
-function App() {
+import { Contact } from './components/contact/contact';
+import { Footer } from './components/footer/footer';
+import { Navbar } from './components/navbar/navbar';
+import { Reviews } from './components/reviews/reviews';
+
+
+export default function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={flyer} className="banner" alt="logo" />
-      </header>
+
+      <Navbar />
+      <Reviews />
+      <Contact />
+      <Footer />
+     
     </div>
   );
 }
 
-export default App;

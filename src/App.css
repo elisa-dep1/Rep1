@@ -1,8 +1,10 @@
+
+
 hmtl, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #F2F6EE
+  background-color: #9c9c9c
 }
 .App-header{
   display: flex;
@@ -14,4 +16,17 @@ hmtl, body {
   max-height: 100vh;
   max-width: 100%
  
+}
+
+:root {
+  --color-primary: #527D21;
+  --color-secondary: #344F14;  
+  --color-background: #FBFAF9;
+  --color-text-black: #202020;
+  --color-text-gray: #545454;
+
+}
+
+p{
+  margin: 0;
 }

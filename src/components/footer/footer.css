@@ -1,0 +1,31 @@
+.footer {
+    height: 60px;
+    background-color: #141414;
+    color: white;
+    padding: 0px 70px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+
+}
+
+
+
+.footer .icons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.footer .icon {
+    height: 30px;
+
+}
+
+.copyright {
+
+    float: left;
+    text-align: left;
+}

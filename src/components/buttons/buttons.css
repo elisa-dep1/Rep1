@@ -9,8 +9,9 @@
     color: var(--color-primary);
     background: transparent;
     border: 2px solid var(--color-primary);
-    padding: 12px 28px;
+    padding: 12px 10px;
     font-size: 18px;
+    width: 250px;
 }
 
 .btn-services:hover {
@@ -22,7 +23,8 @@
 .btn-estimate-green {
     background: var(--color-primary);
     color: white;
-    padding: 14px 32px;
+    padding: 14px 10px;
+    width: 250px;
     font-size: 18px;
     clip-path: polygon(0 0,
             100% 0,
@@ -42,6 +44,7 @@
     color: var(--color-text-black);
     padding: 14px 32px;
     font-size: 18px;
+    width: 250px;
     clip-path: polygon(0 0,
             100% 0,
             100% 67%,

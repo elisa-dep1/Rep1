@@ -4,19 +4,16 @@ hmtl, body {
   margin: 0;
   padding: 0;
   height: 100%;
+
   background-color: #9c9c9c
 }
+
 .App-header{
   display: flex;
   justify-content: center;
 
 }
-.banner {
 
-  max-height: 100vh;
-  max-width: 100%
- 
-}
 
 :root {
   --color-primary: #527D21;

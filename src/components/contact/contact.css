@@ -1,4 +1,4 @@
-.contact{
+.contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,24 +8,27 @@
     text-align: center;
 
 }
-.items{
+
+.items {
     width: 250px;
     flex-direction: column;
 }
 
 .contact .title {
-    font-family: 'Cormorant Garamond';
-    font-style: regular;
+    font-weight: bold;
     font-size: 25px;
     text-align: center;
- 
+    color: var(--color-primary);
+
 }
+
 .contact .subtitle {
     font-family: 'Inter';
     font-style: regular;
     font-size: 16px;
     color: var(--color-text-black);
 }
-.icon{
+
+.icon {
     height: 60px;
 }

@@ -5,7 +5,8 @@ hmtl, body {
   padding: 0;
   height: 100%;
 
-  background-color: #9c9c9c
+  background-color: #9c9c9c;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .App-header{

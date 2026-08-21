@@ -42,7 +42,7 @@
 .btn-estimate-white {
     background: white;
     color: var(--color-text-black);
-    padding: 14px 32px;
+    padding: 14px 10px;
     font-size: 18px;
     width: 250px;
     clip-path: polygon(0 0,

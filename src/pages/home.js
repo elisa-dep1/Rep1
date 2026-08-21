@@ -6,6 +6,7 @@ import Work from '../sections/home/work/work'
 import About from '../sections/home/about/about'
 import Banner from '../sections/home/banner/banner';
 import Services from '../sections/home/services/services';
+import BannerGreen from '../sections/home/slider/slider';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             <Reviews />
             <Work />
             <About/>
+            <BannerGreen/>
             <Contact />
             <Footer />
           

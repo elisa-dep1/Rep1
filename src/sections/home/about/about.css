@@ -4,7 +4,7 @@
 }
 .img-work{
     height: 100%;
-    width: 50%;
+    min-width: 50%;
     object-fit: cover;
     object-position: center 45%;
 }
@@ -12,6 +12,10 @@
     background-color: #FBFAF9;
     width: 50%;
     padding: 40px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .container-icon{
@@ -24,5 +28,34 @@
 
 }
 .firma{
-    width: 250px;
+    width: 320px;
+}
+.about-seccion #text1{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.about-seccion #text2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-text-black);
+    font-family: 'inter';
+}
+.about-seccion .line{
+   background-color: var(--color-primary);
+   height: 2.4px;
+   width: 50px;
+   margin: 0;
+}
+.about-seccion #text3 {
+    font-size: 18px;
+    color: var(--color-text-black);
+    font-family: 'inter';
+    text-align: justify;
+}
+
+.about-seccion #item {
+    font-size: 18px;
+    color: var(--color-text-black);
+    font-family: 'inter';
 }

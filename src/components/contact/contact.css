@@ -10,7 +10,7 @@
 }
 
 .items {
-    width: 250px;
+    width: auto;
     flex-direction: column;
 }
 

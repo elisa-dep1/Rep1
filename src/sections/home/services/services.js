@@ -19,7 +19,7 @@ export default function Services() {
             <hr className='line'/>
             <div className='container-cards'>
                 <Cards title={'LANDSCAPING'} subtitle={'Custom landscaping desings to enhance the beauty of your property.'} />
-                <Cards title={'INTER & PAVERS'} subtitle={'Detable and elegant paver installations for driveways, patios, walways & more.'} />
+                <Cards title={'INTERLOCKING & PAVERS'} subtitle={'Detable and elegant paver installations for driveways, patios, walways & more.'} />
                 <Cards title={'RETAINING WALLS'} subtitle={'Strong and stylish retaining walls built to last and add value to your yard.'} />
                 <Cards title={'DECKS & STAIRS'} subtitle={'Custom decks and stair designed for comfort, function and style.'} />
                 <Cards title={'FENCES'} subtitle={'Privacy and security fences with quality craftsmanship and premium materials.'} />

@@ -1,0 +1,141 @@
+.residential {
+    background-color: #F3F3F3;
+    color: var(--color-text-black);
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+    gap: 20px;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.cardService {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: var(--color-text-black);
+    width: clamp(260px, 30vw, 380px);
+    min-height: 150px;
+    max-height: 200px;
+    padding: 20px 10px;
+    justify-content: space-between;
+    box-shadow: #0000003d 0px 3px 8px;
+}
+
+.commercial {
+    background-color: var(--color-text-black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+    gap: 20px;
+}
+
+
+.text-seccion {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.title-seccion {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.description-seccion {
+    font-size: 24px;
+    font-family: 'Inter';
+
+}
+
+.category {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.title-card {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description-card {
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+
+
+@media (max-width: 420px) {
+
+
+
+    .cards {
+        justify-content: center;
+    }
+
+    .description-seccion {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .text-seccion {
+        font-size: 18px;
+    }
+
+    .title-seccion {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 421px)and (max-width: 879px) {
+    .residential {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .commercial {
+        align-items: center;
+    }
+
+    .description-seccion {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .text-seccion {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .title-seccion {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .cards {
+        justify-content: center
+    }
+}
+
+
+@media (min-width: 300px)and (max-width: 960px) {
+    .residential {
+        padding: 60px 20px;
+    }
+
+    .commercial {
+        padding: 60px 20px;
+    }
+
+}

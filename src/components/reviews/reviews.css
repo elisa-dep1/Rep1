@@ -29,7 +29,7 @@
 .data .title {
     color: var(--color-primary);
     font-family: 'Fraunces';
-    font-size: 35px;
+    font-size: clamp(0.8rem, 6vw, 2rem);
     font-weight: 800;
 
 }
@@ -37,7 +37,7 @@
 .desc {
     color: var(--color-text-gray);
     font-family: 'Inter';
-    font-size: 15px;
+    font-size: clamp(0.8rem, 1vw, 1em);
     font-weight: 400;
 }
 
@@ -54,14 +54,30 @@
 .text {
     color: var(--color-text-gray);
     font-family: 'Inter';
-    font-size: 15px;
+    font-size: clamp(0.8rem, 6vw, 1rem);
     font-weight: 400;
 }
 
 .comment {
     color: var(--color-text-black);
     font-family: 'Fraunces';
-    font-size: 20px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
     padding: 25px 0px;
     text-align: justify;
+}
+
+
+@media(max-width: 730px){
+    .reviews{
+        padding: 40px 20px;
+        flex-direction: column; 
+        height: 100%;   
+    }
+    .comments{
+        width: 100%;
+    }
+    .data{
+        padding-top: 20px;
+        width: 100%;
+    }
 }

@@ -7,9 +7,9 @@ export function Footer() {
         <div className="footer">
             <span className="copyright">© 2026 Altura Landscapes</span>
             <div className="icons">
-                <img className="icon" src={yotu} alt="icon" />
-                <img className="icon" src={insta} alt="icon" />
-                <img className="icon" src={google} alt="icon" />
+                <img className="iconFooter" src={yotu} alt="icon" />
+                <img className="iconFooter" src={insta} alt="icon" />
+                <img className="iconFooter" src={google} alt="icon" />
             </div>
 
         </div>

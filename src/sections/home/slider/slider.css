@@ -1,115 +1,172 @@
-.bannerGreen{
+.slider-section {
     height: 550px;
-    background: linear-gradient(to right, #182C21, #28B367 70%);
-    padding: 0px 70px;
+    padding: 0 70px;
+    background: linear-gradient(to right,
+            #182c21,
+            #28b367 70%);
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    overflow: hidden;
 }
 
-.textBn{
+.slider-text {
     display: flex;
     flex-direction: column;
     gap: 30px;
     max-width: 40%;
 }
 
-
-.textBn #title{
+.slider-title {
     color: white;
-    font-size: 43.5px;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 10vw, 2.5rem)
 }
 
-.textBn #subtitle{
-    color: #85CC33;
-    font-size: 30px;
-    font-family: 'Inter';
+.slider-subtitle {
+    color: #85cc33;
+    font-size: clamp(1rem, 7vw, 2rem)
 }
 
-.textBn #subtitle2{
+.slider-question {
     color: white;
-    font-size: 30px;
-    font-family: 'Inter';
-    font-weight: 500;
-    
+    font-size: clamp(1rem, 6vw, 2rem);
+    font-weight: 600;
 }
 
 
-.slider {
-    width: 40%;
+
+.slider-content {
+
+    height: 550px;
+}
+
+.web-slider-container {
+    gap: 150px;
     height: 550px;
     display: flex;
     justify-content: space-between;
-    padding-left: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.web-slider-column {
+    position: relative;
+    width: 200px;
+    height: 550px;
     overflow: hidden;
 }
 
-.sliderColumn {
-   
-    height: 100%;
-
-    overflow: hidden;
-}
-
-
-.sliderTrack {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-
-
-
-.sliderTrack .image {
+.web-slider-slot {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 200px;
     height: 300px;
-    flex-shrink: 0;
-    background: #0000009b;
+    transform: translateY(0);
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-slider-card {
+    width: 200px;
+    height: 300px;
+    scale: 0.88;
+    transition: scale 0.4s ease;
+    transform-origin: center;
     border-radius: 18px;
-    border: none;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    will-change: scale;
+}
+
+.web-slider-card img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    pointer-events: none;
 }
 
-
-/* COLUMNA IZQUIERDA: SUBE */
-
-.sliderColumnUp .sliderTrack {
-    animation: sliderUp 60s linear infinite;
+.mobile-slider-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: visible;
 }
 
-
-/* COLUMNA DERECHA: BAJA */
-
-.sliderColumnDown .sliderTrack {
-    animation: sliderDown 60s linear infinite;
+.mobile-slider-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
+.mobile-slider-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 275px;
+    border-radius: 18px;
+    overflow: hidden;
+    transform-origin: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
 
+.mobile-slider-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-
-@keyframes sliderUp {
-
-    from {
-        transform: translateY(0);
+@media (max-width: 900px) {
+    .slider-section {
+        height: auto;
+        min-height: 550px;
+        padding: 45px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    to {
-        transform: translateY(-1600px);
+
+    .slider-text {
+        max-width: none;
+        width: 100%;
+        padding: 0 24px;
+        gap: 16px;
+        text-align: center;
+        margin-bottom: 24px;
+        box-sizing: border-box;
+        align-items: center;
     }
 
+    .slider-content {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 
-@keyframes sliderDown {
-
-    from {
-        transform: translateY(-1600px);
+@media (min-width: 900px) and (max-width: 1000px) {
+    .web-slider-container {
+        gap: 50px;
     }
 
-    to {
-        transform: translateY(0);
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .web-slider-container {
+        gap: 90px;
+    }
+
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .web-slider-container {
+        gap: 120px;
     }
 
 }
